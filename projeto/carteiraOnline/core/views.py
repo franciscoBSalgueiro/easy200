@@ -7,9 +7,8 @@ from .models import Conta
 # Create your views here.
 
 def home(request, user_id):
-    data = {
-        'name': Conta.objects.first()
-    }
+    data = Conta.objects.all()
+    print(data)
     return render(request, 'core/home.html', {'data': data})
 
 def login(request):
