@@ -16,70 +16,8 @@
       <main class="mt-16 h-screen">
         <!-- Search component -->
         <div class="flex items-center max-w-xl mx-auto">
-          <input type="text" placeholder="Shear" class="w-full text-lg px-4 py-4 rounded-md rounded-r-none outline-none" />
-          <div class="flex space-x-1">
-            <button class="bg-indigo-500 hover:bg-indigo-600 transition duration-100 text-xl py-4 px-8 rounded-md rounded-l-none text-white font-semibold">Go</button>
-          </div>
-          <button class="text-xl py-4 px-6 ml-4 rounded-md font-semibold hover:bg-gray-50 transition duration-100 bg-white text-gray-700">Clear</button>
-        </div>
-        <div class="flex flex-wrap space-x-4 justify-center">
-          <!-- User Results -->
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
-          <div class="flex p-5 mt-8 space-x-4 items-center shadow-xl max-w-sm rounded-md">
-            <img src="https://avatars.githubusercontent.com/u/5550850?v=4" alt="image" class="h-14 w-14 rounded-full" />
-            <div>
-              <h2 class="text-white font-semibold text-xl">bradtraversy</h2>
-              <p class="mt-1 text-gray-400 text-sm cursor-pointer">Visit Profile</p>
-            </div>
-          </div>
+          {% block content %}
+          {% endblock %}
         </div>
       </main>
       <!-- Footer Component -->
