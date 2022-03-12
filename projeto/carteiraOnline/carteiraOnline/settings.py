@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tailwind',
-    'carteira.apps.CarteiraConfig',
+    'core.apps.CoreConfig',
     'theme',
     'core'
 ]
