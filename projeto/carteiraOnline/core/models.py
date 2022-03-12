@@ -8,7 +8,10 @@ from django.utils import timezone
 class Conta(models.Model):
     nr_conta_text = models.CharField(max_length=200)
     money_text = models.CharField(max_length=200)
-    tipo_conta_text = models.CharField(max_length=200)
+    premium = models.BooleanField(max_length=200)
+    localidade_text = models.CharField(max_length=200)
+    email_text = models.CharField(max_length=200)
+    nr_telemovel_text = models.CharField(max_length=11)
 
 
     pub_date = models.DateTimeField('date published')
