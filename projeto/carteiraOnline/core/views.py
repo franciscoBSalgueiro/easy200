@@ -1,10 +1,16 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.conf import settings
+
+from .models import Conta
+
 # Create your views here.
 
-def home(request):
-    return render(request, 'core/home.html')
+def home(request, user_id):
+    data = {
+        'name': Conta.objects.first()
+    }
+    return render(request, 'core/home.html', {'data': data})
 
 def login(request):
     return render(request, 'core/login.html')
