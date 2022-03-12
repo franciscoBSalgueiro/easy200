@@ -8,10 +8,13 @@ from django.contrib import admin
 
 # admin.site.register(Question)
 
-from .models import Author, Genre, Book, BookInstance
+# from .models import Money, Nr_Conta, Book, BookInstance
 
-admin.site.register(Book)
-admin.site.register(Author)
-admin.site.register(Genre)
-admin.site.register(BookInstance)
+# admin.site.register(Money)
+# admin.site.register(Nr_Conta)
+# admin.site.register(Tipo_Conta)
+# admin.site.register(Localidade)
+# admin.site.register(Nome)
+# admin.site.register(Email)
+# admin.site.register(Localidade)
 
