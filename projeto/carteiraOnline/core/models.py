@@ -9,14 +9,11 @@ from django.utils import timezone
 class Conta(models.Model):
     nr_conta_text = models.CharField(max_length=200)
     money_text = models.CharField(max_length=200)
-<<<<<<< HEAD
 
     localidade_text = models.CharField(max_length=200)
     email_text = models.CharField(max_length=200)
     nr_telemovel_text = models.CharField(max_length=11)
 
-=======
->>>>>>> 4b2aed2df0416df0542e6682e8ffc8c7e87fd539
     premium = models.BooleanField()
 
 
