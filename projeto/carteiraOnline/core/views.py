@@ -10,5 +10,9 @@ def home(request, user_id):
     data = Conta.objects.all()
     return render(request, 'core/home.html', {'data': data})
 
+def extrato(request, user_id):
+    data = Conta.objects.all()
+    return render(request, 'core/extrato.html', {'data': data})
+
 def login(request):
     return render(request, 'core/login.html')
