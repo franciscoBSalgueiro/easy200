@@ -5,3 +5,6 @@ from django.conf import settings
 
 def home(request):
     return render(request, 'core/home.html')
+
+def login(request):
+    return render(request, 'core/login.html')
