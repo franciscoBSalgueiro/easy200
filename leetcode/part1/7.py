@@ -1,3 +1,4 @@
+
 user_input = input()
 
 snake_path = []
