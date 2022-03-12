@@ -7,12 +7,12 @@ from django.utils import timezone
 
 
 class Conta(models.Model):
-    nr_conta_text = models.CharField(max_length=200)
-    money_text = models.CharField(max_length=200)
-
+    nr_conta_text = models.IntegerField()
+    money_text = models.IntegerField()
+    name_text = models.CharField(max_length=200)
     localidade_text = models.CharField(max_length=200)
     email_text = models.CharField(max_length=200)
-    nr_telemovel_text = models.CharField(max_length=11)
+    nr_telemovel_text = models.IntegerField()
 
     premium = models.BooleanField()
 
