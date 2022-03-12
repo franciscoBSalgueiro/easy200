@@ -8,10 +8,8 @@ def conversao (quantidade_euro: float, nova_moeda: str)-> float:
     Returns:
         float: quantidade na nova moeda
     """
-    if nova_moeda not in ["dollar", "pound", "swiss", "canada", "japan","hongkong"]:
+    if nova_moeda not in ["dollar", "pound", "swiss", "canada", "japan","hongkong","shiba"]:
         raise ValueError("Input mal feito")
-
-    #conversao = 0
 
     if nova_moeda == "dollar":
         conversao = quantidade_euro * 1.09
@@ -30,6 +28,9 @@ def conversao (quantidade_euro: float, nova_moeda: str)-> float:
     
     if nova_moeda == "hongkong":
         conversao = quantidade_euro * 8.54
+
+    if nova_moeda == "shiba":
+        conversao = quantidade_euro * 46478.3
     
     
     return ('{:,}'.format(conversao))

@@ -12,7 +12,9 @@ def home(request, user_id):
     data = Conta.objects.get(nr_conta_text=user_id)
     euro = data.money_text
     dollar = conversao(euro,"dollar")
-    return render(request, 'core/home.html', {'obj': data, 'money': {"euro": '{:,}'.format(euro), "dollar": dollar}})
+    pound = conversao(euro, "pound")
+    shiba = conversao(euro, "shiba")
+    return render(request, 'core/home.html', {'obj': data, 'money': {"euro": '{:,}'.format(euro), "dollar": dollar, "pound": pound, "shiba": shiba}})
 
 def extrato(request, user_id):
     data = Conta.objects.get(nr_conta_text=user_id)
