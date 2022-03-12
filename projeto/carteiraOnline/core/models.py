@@ -5,6 +5,7 @@ from django.utils import timezone
 
 
 
+
 class Conta(models.Model):
     nr_conta_text = models.CharField(max_length=200)
     money_text = models.CharField(max_length=200)
