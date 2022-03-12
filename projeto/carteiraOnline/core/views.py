@@ -8,7 +8,6 @@ from .models import Conta
 
 def home(request, user_id):
     data = Conta.objects.all()
-    print(data)
     return render(request, 'core/home.html', {'data': data})
 
 def login(request):
