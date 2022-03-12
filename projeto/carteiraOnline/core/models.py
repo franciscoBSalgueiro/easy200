@@ -18,8 +18,6 @@ class Conta(models.Model):
 
 
     pub_date = models.CharField(max_length=69420)
-    def __str__(self):
-        return self.nr_conta_text
     
 
 # class Money_euros(models.Model):
