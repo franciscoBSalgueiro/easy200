@@ -1,5 +1,6 @@
 user_input = input()
 
+
 carros = []
 for l in user_input.split("\n")[1:]:
     if "aceitarCarro" in l:
