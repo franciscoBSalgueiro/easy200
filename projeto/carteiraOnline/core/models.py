@@ -5,23 +5,28 @@ from django.utils import timezone
 
 
 
-class Money(models.Model):
+class Conta(models.Model):
+    nr_conta_text = models.CharField(max_length=200)
     money_text = models.CharField(max_length=200)
+    tipo_conta_text = models.CharField(max_length=200)
+
+
     pub_date = models.DateTimeField('date published')
-    def __str__(self):
-        return self.question_text
+
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
-class Money(models.Model):
-    money_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published')
-    def __str__(self):
-        return self.question_text
+
+
+# class Money_euros(models.Model):
+#     money_text = models.CharField(max_length=200)
+#     pub_date = models.DateTimeField('date published')
+#     def __str__(self):
+#         return self.money_text
     
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+    # def was_published_recently(self):
+    #     return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 
 # class Choice(models.Model):
