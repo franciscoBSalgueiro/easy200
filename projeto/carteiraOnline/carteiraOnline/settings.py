@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tailwind',
     'carteira.apps.CarteiraConfig',
     'theme',
+    'core'
 ]
 
 TAILWIND_APP_NAME = 'theme'
