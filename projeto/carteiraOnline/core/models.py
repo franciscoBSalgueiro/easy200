@@ -8,14 +8,16 @@ from django.utils import timezone
 class Conta(models.Model):
     nr_conta_text = models.CharField(max_length=200)
     money_text = models.CharField(max_length=200)
-    premium = models.BooleanField(max_length=200)
     localidade_text = models.CharField(max_length=200)
     email_text = models.CharField(max_length=200)
     nr_telemovel_text = models.CharField(max_length=11)
 
+    premium = models.BooleanField()
+
 
     pub_date = models.DateTimeField('date published')
-
+    def __str__(self):
+        return self.nr_conta_text
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
