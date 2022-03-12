@@ -4,6 +4,7 @@
 	<h2 class="mb-4 text-2xl font-semibold leading-tight">Invoices</h2>
 	<div class="overflow-x-auto">
 		<table class="min-w-full text-xs">
+      
 			<colgroup>
 				<col>
 				<col>
@@ -12,6 +13,7 @@
 				<col>
 				<col class="w-24">
 			</colgroup>
+      {% for obj in data %}
 			<thead class="dark:bg-coolGray-700">
 				<tr class="text-left">
 					<th class="p-3">Invoice #</th>
@@ -22,6 +24,7 @@
 					<th class="p-3">Status</th>
 				</tr>
 			</thead>
+      {% endfor %}
 			<tbody>
 				<tr class="border-b border-opacity-20 dark:border-coolGray-700 dark:bg-coolGray-900">
 					<td class="p-3">
