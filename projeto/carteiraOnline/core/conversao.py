@@ -32,6 +32,6 @@ def conversao (quantidade_euro: float, nova_moeda: str)-> float:
         conversao = quantidade_euro * 8.54
     
     
-    return ('%.3f' %conversao)
+    return ('{:,}'.format(conversao))
 
 # Made with love <3 by: TOMAS TEIXEIRA
