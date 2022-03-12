@@ -17,13 +17,9 @@ class Conta(models.Model):
     premium = models.BooleanField()
 
 
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.CharField(max_length=69420)
     def __str__(self):
         return self.nr_conta_text
-    def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
-
-
 
 
 # class Money_euros(models.Model):
