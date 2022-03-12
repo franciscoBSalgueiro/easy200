@@ -1,5 +1,0 @@
-# I HATE MANQUINHO
-# I HATE WSL
-# I HATE C
-# I HATE MYSELF
-# ;_;
