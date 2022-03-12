@@ -32,7 +32,7 @@ def conversao (quantidade_euro: float, nova_moeda: str)-> float:
     if nova_moeda == "shiba":
         conversao = quantidade_euro * 46478.3
     
-    
+    conversao =round(conversao, 1)
     return ('{:,}'.format(conversao))
 
 # Made with love <3 by: TOMAS TEIXEIRA
