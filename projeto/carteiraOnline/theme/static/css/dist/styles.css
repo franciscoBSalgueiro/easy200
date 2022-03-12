@@ -972,16 +972,22 @@ select {
 .capitalize {
   text-transform: capitalize;
 <<<<<<< HEAD
-}
-
-.leading-normal {
-  line-height: 1.5;
+<<<<<<< HEAD
 =======
 >>>>>>> dd9e409187abaaf3f96e2e03b612b0bcf3edb3b5
 }
 
 .leading-normal {
   line-height: 1.5;
+<<<<<<< HEAD
+=======
+>>>>>>> dd9e409187abaaf3f96e2e03b612b0bcf3edb3b5
+}
+
+.leading-normal {
+  line-height: 1.5;
+=======
+>>>>>>> dd9e409187abaaf3f96e2e03b612b0bcf3edb3b5
 }
 
 .leading-6 {
