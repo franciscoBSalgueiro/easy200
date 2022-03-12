@@ -7,8 +7,8 @@ from .models import Conta
 # Create your views here.
 
 def home(request, user_id):
-    data = Conta.objects.all()
-    return render(request, 'core/home.html', {'data': data})
+    data = Conta.objects.get(nr_conta_text=user_id)
+    return render(request, 'core/home.html', {'obj': data})
 
 def extrato(request, user_id):
     data = Conta.objects.all()
