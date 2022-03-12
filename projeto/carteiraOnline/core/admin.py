@@ -1,4 +1,9 @@
 from django.contrib import admin
+from django.contrib import admin
+
+from .models import Conta
+
+admin.site.register(Conta)
 
 # Register your models here.
 
